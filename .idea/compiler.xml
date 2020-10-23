@@ -9,5 +9,8 @@
         <module name="Sub Work Flow" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="Sub Work Flow" target="8" />
+    </bytecodeTargetLevel>
   </component>
 </project>
