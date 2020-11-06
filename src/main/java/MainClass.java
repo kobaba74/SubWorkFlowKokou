@@ -1,13 +1,18 @@
+import clustering.SpectralClustering;
+import graph.CloudLet;
 import graph.CloudLetGrah;
-import weka.associations.Apriori;
-import weka.clusterers.DensityBasedClusterer;
+
+import java.util.List;
 
 public class MainClass {
     public static void main(String[] args) {
-        CloudLetGrah cloudLetGrah=new CloudLetGrah();
-        cloudLetGrah.produceGraph();
-        cloudLetGrah.getEndNode();
-        DensityBasedClusterer densityBasedClusterer;
+        CloudLetGrah cloudLetGrah = new CloudLetGrah();
+        List<CloudLet> cloudLets = cloudLetGrah.produceGraph();
+        // print graph in console
+        System.out.println(cloudLetGrah);
+        SpectralClustering spectralClustering = new SpectralClustering();
+        spectralClustering.produce(cloudLets);
+
 
     }
 }
