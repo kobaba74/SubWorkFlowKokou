@@ -13,7 +13,7 @@ import java.util.Calendar;
 import java.util.LinkedList;
 import java.util.List;
 
-public class schedulingAlgorithm {
+public class SchedulingAlgorithm {
     public static void main(String[] args) {
         Log.printLine("Starting CloudSimExample3...");
 
